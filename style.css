@@ -33,8 +33,8 @@ h1 {
 .bike-wheels {
   box-shadow: 0 0 10px rgba(35, 36, 41, 0.8);
   border-radius: 10px;
-  width: 70%;
-  height: 400px;
+  width: 900px;
+  height: 600px;
   margin: 2em;
   overflow: hidden;
 }
