@@ -1,0 +1,390 @@
+/* GLOBAL */
+.wrapper {
+  margin: 0;
+  padding: 0;
+  background-color: #f1f4df;
+  color: #192965;
+  font-family: Lora, Arial, Helvetica, sans-serif;
+}
+
+.conatiner {
+  width: 80%;
+  margin: 0 auto;
+}
+
+/* TITLE/HEADER */
+h1 {
+  color: #fcdc74;
+  background-color: #0060ca;
+  font-family: Lora;
+  font-size: 50px;
+  margin: 0 auto;
+  padding: 30px;
+  text-align: center;
+  border-bottom: 10px solid #fcdc74;
+}
+
+/* TOP OF PAGE */
+.bike-wheels {
+  width: 100%;
+  max-height: 800px;
+}
+
+h2 {
+  font-family: Lora;
+  text-align: center;
+  font-size: 60px;
+  font-weight: 300;
+  padding: 20px;
+  margin: 20px;
+}
+
+.info {
+  font-family: Lora;
+  font-size: 1.5em;
+}
+
+/* QUIZ SECTION*/
+#quiz {
+  background-color: #192965;
+  color: #fcdc74;
+  font-size: 50px;
+  font-family: Lora;
+  text-align: center;
+  width: fit-content;
+  padding: 20px;
+  margin: 50px;
+  justify-content: space-evenly;
+}
+
+.button {
+  font-family: Lora;
+  font-size: 30px;
+  margin: auto;
+  overflow: hidden;
+  padding: 10px;
+  text-align: center;
+  background-color: #fcdc74;
+  color: #0060ca;
+  text-transform: uppercase;
+}
+
+.buton a:hover {
+  cursor: pointer;
+}
+
+/* MAIN 3 BIKE COLUMNS */
+.title {
+  font-weight: 300;
+  font-size: 40px;
+}
+
+.cruiser,
+.mountain,
+.road {
+  width: 300px;
+  height: 230px;
+  box-shadow: 0 0 10px rgba(25, 41, 101, 0.8);
+  border-radius: 4px;
+  position: relative;
+  transition: 320ms ease;
+  margin: 10px;
+}
+
+.cruiser {
+  background: url(./bikeImages/CrusierBike.jpg) center;
+  background-size: 300px;
+}
+
+.mountain {
+  background: url(./bikeImages/mountainBike.jpg) center;
+  background-size: 390px;
+}
+
+.road {
+  background: url(./bikeImages/roadbike.jpg) center;
+  background-size: 390px;
+}
+
+.cruiser:hover,
+.mountain:hover,
+.road:hover {
+  transform: scale(1.2);
+}
+
+.info a {
+  position: sticky;
+  bottom: 20px;
+  left: 20px;
+  font-size: 30px;
+  line-height: 26px;
+  color: #fcdc74;
+  cursor: pointer;
+  transition: 250ms ease;
+  opacity: 0;
+  transform: translateX(24px);
+}
+
+/* BIKE PAGES */
+.bikeTypes {
+  font-size: 40px;
+  text-align: center;
+  color: #fcdc74;
+  font-family: Lora;
+  background-color: #0060ca;
+  padding: 15px;
+  margin: 10px;
+  border-bottom: solid 6px #fcdc74;
+}
+
+/* SLIDESHOW FOR CRUISER, MOUNTAIN, ROAD*/
+#slide {
+  align-content: center;
+  padding: 30px 180px 30px 180px;
+  width: 50%;
+  max-height: 500em;
+}
+
+.info-cruiser,
+.info-mountain,
+.info-road {
+  font-size: 20px;
+  font-family: Lora;
+  width: 80%;
+  margin: auto;
+  overflow: hidden;
+}
+
+a href {
+  font-size: 20px;
+}
+
+/*FOOTER */
+footer {
+  padding: 10px;
+  margin-top: 10px;
+  color: #fcdc74;
+  background-color: #0060ca;
+  text-align: center;
+  margin-top: 70px;
+  position: sticky;
+}
+
+/* MEDIA QUERIES */
+@media screen and (max-width: 600px) {
+  .conatiner {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+  }
+
+  .bike-wheels {
+    width: 100%;
+    max-height: 10em;
+  }
+
+  h1 {
+    font-size: 40px;
+    padding: 10px;
+    border-bottom: 7px solid #fcdc74;
+    text-align: center;
+  }
+
+  h2 {
+    font-size: 25px;
+    text-align: center;
+    padding: 10px;
+  }
+
+  .info {
+    font-size: 10px;
+    padding: 10px;
+  }
+
+  #quiz {
+    font-size: 15px;
+    text-align: center;
+    width: fit-content;
+    padding: 10px;
+    margin: 10px;
+    justify-content: space-evenly;
+  }
+
+  .button {
+    font-size: 10px;
+    margin: auto;
+    overflow: hidden;
+    padding: 10px;
+    text-align: center;
+  }
+
+  .title {
+    font-size: 30px;
+    text-align: center;
+  }
+
+  #slide {
+    align-content: center;
+    padding: 30px 90px 30px 90px;
+    width: 50%;
+    max-height: 500em;
+  }
+
+  .bikeTypes {
+    font-size: 20px;
+    padding: 10px;
+    margin: 10px;
+    border-bottom: solid 6px #fcdc74;
+  }
+
+  .info-mountain,
+  .info-cruiser,
+  .info-road p {
+    font-size: 10px;
+  }
+
+  a href {
+    font-size: 10px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .conatiner {
+    width: 80%;
+    margin: 0 auto;
+    overflow: hidden;
+  }
+
+  .bike-wheels {
+    width: 100%;
+    max-height: 20em;
+  }
+
+  h1 {
+    font-size: 60px;
+    padding: 30px;
+    border-bottom: 7px solid #fcdc74;
+  }
+
+  h2 {
+    font-size: 60px;
+    text-align: center;
+    padding: 10px;
+  }
+
+  .info {
+    font-size: 20px;
+    padding: 10px;
+  }
+
+  #quiz {
+    font-size: 30px;
+    text-align: center;
+    width: fit-content;
+    padding: 20px;
+    margin: 20px;
+    justify-content: space-evenly;
+  }
+
+  .button {
+    font-size: 30px;
+    margin: auto;
+    overflow: hidden;
+    padding: 10px;
+    text-align: center;
+  }
+
+  .title {
+    font-size: 60px;
+    text-align: center;
+    padding-top: 30px;
+  }
+
+  .cruiser,
+  .mountain,
+  .road {
+    margin-top: 40px;
+  }
+
+  #slide {
+    align-content: center;
+    padding: 30px 180px 30px 180px;
+    width: 50%;
+    max-height: 500em;
+  }
+
+  .bikeTypes {
+    font-size: 30px;
+    padding: 10px;
+    margin: 10px;
+  }
+
+  .info-mountain,
+  .info-cruiser,
+  .info-road p {
+    font-size: 20px;
+  }
+
+  a href {
+    font-size: 10px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .container {
+    width: 80%;
+    margin: auto;
+  }
+
+  #quiz {
+    font-size: 30px;
+  }
+
+  #slide {
+    align-content: center;
+    padding: 30px 250px 30px 250px;
+    width: 50%;
+    max-height: 500em;
+  }
+
+  .title {
+    font-size: 40px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 80%;
+    margin: auto;
+  }
+
+  h1 {
+    font-size: 100px;
+  }
+
+  .bike-wheels {
+    width: 100%;
+    max-height: 600px;
+  }
+
+  .info {
+    padding: 50px;
+    font-size: 30px;
+  }
+
+  #quiz {
+    font-size: 50px;
+    margin-bottom: 100px;
+  }
+
+  .bikeTypes {
+    font-size: 50px;
+  }
+
+  #slide {
+    align-content: center;
+    padding: 30px 400px 30px 400px;
+    width: 50%;
+    max-height: 500em;
+  }
+}
