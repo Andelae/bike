@@ -1,9 +1,8 @@
 /* IMAGES FOR SLIDESHOW */
 var imgArray = [
-  "./bikeImages/mountain2.jpg",
-  "./bikeImages/mountain3.jpg",
-  "./bikeImages/mountain4.jpg",
-  "./bikeImages/mountain5.jpg",
+  "./bikeImages/road5.jpg",
+  "./bikeImages/road3.jpg",
+  "./bikeImages/road4.jpg",
 ];
 
 /*CURRENT IMAGE*/

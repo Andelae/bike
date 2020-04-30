@@ -2,63 +2,57 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>QUIZ</title>
-    <link rel="stylesheet" href="quiz.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bike Quiz</title>
+    <link rel="stylesheet" href="./CSS/quiz.css" />
+    <script src="./JS/quizBike.js"></script>
 </head>
 
 <body>
-    <div class="intro">
-        <h1>Quiz App</h1>
+    <div id="container">
+        <header>
+            <h1>Bike Quiz</h1>
+            <p>Take quiz to find out the right bicycle for you!</p>
+        </header>
+        <section>
+            <form name="quizForm" onsubmit="return submitAnswers()">
+                <h3 class="question">
+                    "Do you prefer to take things at a slower pace and take stops to
+                    enjoy the world around you?"
+                </h3>
+                <label class="answer">
+                    <input type="radio" name="q1" value="a" id="q1a">yes
+                </label>
+                <label class="answer">
+                    <input type="radio" name="q1" value="b" id="q1b">no
+                </label>
+                <h3 class="question">"Do you enjoy getting dirty and things to be exciting?"</h3>
+                <label class="answer">
+                    <input type="radio" name="q2" value="a" id="q2a">yes
+                </label>
+                <label class="answer">
+                    <input type="radio" name="q2" value="b" id="q2b">no
+                </label>
+                <h3 class="question">"Do you enjoy excercising and going fast?"</h3>
+                <label class="answer">
+                    <input type="radio" name="q3" value="a" id="q3a">yes
+                </label>
+                <label class="answer">
+                    <input type="radio" name="q3" value="b" id="q3b">no
+                </label>
+                <div id="results"></div>
+                <div class="btn">
+                    <input type="submit" class="button" value="Submit Answers">
+                    <br>
+                    <br>
+                    <a href="index.html">Back Home to Look at Bikes</a>
+                </div>
     </div>
-    <!-- QUIZ QUESTIONS AND ANSWER CHOICES -->
-    <div class="quiz">
-        <form class="quizForm">
-            <div class="question">
-                <h3>"Do you prefer to take things at a slower pace and take stops to enjoy the world around you?"</h3>
-                <label class="answer">
-                    <input type="radio" name="q1" value="a">
-                    Yes
-                </label>
-                <label class="answer">
-                    <input type="radio" name="q1" value="b">
-                    No
-                </label>
-            </div>
-            <div class="question">
-                <h3>"Do you enjoy getting dirty and things to be exciting?"</h3>
-                <label class="answer">
-                    <input type="radio" name="q2" value="a">
-                    Yes
-                </label>
-                <label class="answer">
-                    <input type="radio" name="q2" value="b">
-                    No
-                </label>
-            </div>
-            <div class="question">
-                <h3>"Do you enjoy excercising and going fast?"</h3>
-                <label class="answer">
-                    <input type="radio" name="q3" value="a">
-                    Yes
-                </label>
-                <label class="answer">
-                    <input type="radio" name="q3" value="b">
-                    No
-                </label>
-            </div>
-            <div class="btn">
-                <input type="Submit" class="button" value="Submit" data-answer="load">
-            </div>
-            <!--RESULT SECTION  -->
-            <div class="result">
-                <p>You got <span class="bike"></span> Now click on the image and learn more!</p>
-
-            </div>
-        </form>
+    <!-- <div id="results"></div> -->
+    </form>
+    </section>
     </div>
-    <script src="quiz.js"></script>
 </body>
 
 </html>
