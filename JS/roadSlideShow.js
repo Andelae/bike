@@ -3,6 +3,7 @@ var imgArray = [
   "./bikeImages/road5.jpg",
   "./bikeImages/road3.jpg",
   "./bikeImages/road4.jpg",
+  "./bikeImages/road6.jpg",
 ];
 
 /*CURRENT IMAGE*/
