@@ -29,6 +29,7 @@ header {
 .question {
   padding-top: 20px;
   margin: 0 auto;
+  font-weight: lighter;
 }
 
 .answer {
