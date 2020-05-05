@@ -17,18 +17,18 @@ function submitAnswers() {
   for (i = 1; i <= total; i++) {
     if (q1 == answers[0]) {
       bike = "CRUISER";
-    }
-    if (q2 == answers[1]) {
+    } else if (q2 == answers[1]) {
       bike = "MOUNTAIN";
-    }
-    if (q3 == answers[2]) {
+    } else if (q3 == answers[2]) {
       bike = "ROAD";
+    } else {
+      bike = "<h2> Biking is NOT for you";
     }
   }
 
   /* DISPLAY RESULTS*/
   var results = document.getElementById("results");
-  results.innerHTML = "<h3>You got a <span>" + bike + "</span> Bike!</h3>";
+  results.innerHTML = "<h3>You got a <span>" + bike + "</span> bike!</h3>";
   // STOPS QUESTIONS FROM RUNNING
   return false;
 }
