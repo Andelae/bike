@@ -90,7 +90,7 @@ h2 {
   transition: 320ms ease;
   margin: 10px;
 }
-
+/* 
 .cruiser {
   background: url(./bikeImages/CrusierBike.jpg) center;
   background-size: 300px;
@@ -104,7 +104,7 @@ h2 {
 .road {
   background: url(./bikeImages/roadbike.jpg) center;
   background-size: 390px;
-}
+} */
 
 .cruiser:hover,
 .mountain:hover,
