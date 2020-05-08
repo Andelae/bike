@@ -138,6 +138,12 @@ h2 {
 }
 
 /* SLIDESHOW FOR CRUISER, MOUNTAIN, ROAD*/
+.wrapper2 {
+  background-color: #f1f4df;
+  margin: 0;
+  padding: 0;
+}
+
 #slide {
   align-content: center;
   padding: 30px 180px 30px 180px;
